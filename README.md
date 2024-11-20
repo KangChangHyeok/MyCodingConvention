@@ -60,6 +60,32 @@
 ## 메모리 관리
 - 순환 참조 일어나지 않도록 weak 적절히 잘 사용하기, unowned는 지양하자
 
+## UIKit
+
+### 일반적인 구조 정의
+
+```swift
+class CustomView: UIView {
+
+//MARK: - Properties
+//MARK: - Components
+// MARK: - Initializers
+// MARK: - LifeCycle
+// MARK: - Set
+override func setDefaults(at viewController: UIViewController) {}
+override func setHierarchy(at view: UIView) {}
+override func setLayout(at view: UIView) {}
+// MARK: - Private 
+}
+
+// MARK: - DataSource  
+extension CustomView: DataSource {
+}
+// MARK: - Delegate 
+extension CustomView: Delegate {
+}
+```
+
 ## Reference
 
 https://github.com/DeveloperAcademy-POSTECH/swift-style-guide?tab=readme-ov-file#%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%99%80-%ED%81%B4%EB%9E%98%EC%8A%A4
