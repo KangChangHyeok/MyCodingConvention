@@ -70,8 +70,8 @@ class CustomView: UIView {
 //MARK: - Properties
 //MARK: - Components
 // MARK: - Initializers
-// MARK: - LifeCycle
 // MARK: - Set
+// MARK: - LifeCycle
 override func setDefaults(at viewController: UIViewController) {}
 override func setHierarchy(at view: UIView) {}
 override func setLayout(at view: UIView) {}
